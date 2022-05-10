@@ -6,7 +6,7 @@
 /*   By: aespinos <aespinos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/12 19:08:23 by aespinos          #+#    #+#             */
-/*   Updated: 2022/04/12 19:26:37 by aespinos         ###   ########.fr       */
+/*   Updated: 2022/04/18 19:27:54 by aespinos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,7 +89,7 @@ void	print_node(t_node **g_list)
 	aux = (*g_list);
 	while (aux)
 	{
-		printf("%c", aux->val);
+		write(1, &aux->val, 1);
 		free(aux);
 		aux = aux->next;
 	}
